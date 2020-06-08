@@ -58,7 +58,7 @@
 		<tr><td>
 		
 			<center>
-				<a href="" >V1.0.0</a>
+				<a href="" >V1.2.0</a>
 			</center>
 		</td></tr>
 	</table>
@@ -82,6 +82,14 @@
 		<div ng-bind-html="ctrl.getListEvents( ctrl.designlistevents, '')"></div></td>
 		
 		
+		<!--  -------------------------------------  -->
+		<!--  Show the process          -->
+		<!--  -------------------------------------  -->
+		<div ng-if="ctrl.process.processDefinitionId !=null">
+			<iframe ng-src="{{ctrl.getUrlProcessVisu()}}" style="width:100%; height:600px">
+							</iframe>
+		</div>
+							
 		<!--  -------------------------------------  -->
 		<!--  PARAMETER TO ADD AN ACTIVITY           -->
 		<!--  -------------------------------------  -->

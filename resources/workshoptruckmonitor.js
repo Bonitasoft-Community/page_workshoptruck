@@ -73,6 +73,11 @@ appCommand.controller('WorkshopControler',
 				
 	}
 
+	this.getUrlProcessVisu = function() {
+		return "/bonita/portal.js/#/admin/monitoring/"+this.process.processDefinitionId+"?id="+this.process.processDefinitionId;
+	}
+	
+	
 	this.controlInsertActivity = function() {
 		var message="";
 		if (! this.process.processDefinitionId)
